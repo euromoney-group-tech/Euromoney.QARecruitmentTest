@@ -59,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EuromoneyManagementTeam.feature</DependentUpon>
     </Compile>
+    <Compile Include="EuromoneyPortfolio.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuromoneyPortfolio.feature</DependentUpon>
+    </Compile>
     <Compile Include="Steps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -67,6 +72,10 @@
     <None Include="EuromoneyManagementTeam.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>EuromoneyManagementTeam.feature.cs</LastGenOutput>
+    </None>
+    <None Include="EuromoneyPortfolio.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EuromoneyPortfolio.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

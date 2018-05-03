@@ -36,7 +36,7 @@ I want to **view a list of the management team**
 
 In order to **promote out portfolio**
 As a **user**  
-I want to **view a list and navigate to other brands**  
+I want to **view a list and navigate to other brands**
 
 
 #### Acceptance criteria

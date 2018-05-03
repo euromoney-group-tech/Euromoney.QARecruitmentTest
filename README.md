@@ -1,6 +1,6 @@
 ## Intro
 
-Hello. Thanks for taking the time do our test. It's made up of two parts, a UI test and an API test. We have created blank projects with references for [NUnit](http://www.nunit.org) and [Selenium WebDriver](http://www.seleniumhq.org/docs/03_webdriver.jsp) using [NuGet](http://nuget.codeplex.com/) Packages. 
+Hello. Thank you for taking the time do our tests. It's made up of two parts, a UI test and an API test. We have created blank projects with references for [NUnit](http://www.nunit.org), [Specflow](http://specflow.org/) and [Selenium WebDriver](http://www.seleniumhq.org/docs/03_webdriver.jsp) using [NuGet](http://nuget.codeplex.com/) Packages. 
 
 Feel free to use any other packages you think will help demonstrate your test writing skills.
 
@@ -10,7 +10,7 @@ Feel free to use any other packages you think will help demonstrate your test wr
 
 ## UI Test
 
-Using C# write automated functional tests for the following user stories using Selenium WebDriver and Specflow with the use of page object where possible
+Using C# write automated functional tests for the following user stories using Selenium and Specflow with the use of the page object pattern where possible
 - The site to test is http://www.euromoneyplc.com/
 - Any browser can be used for the purpose of this task.
 
@@ -18,23 +18,25 @@ Using C# write automated functional tests for the following user stories using S
 
 ### Story 1
 
-As a **user**  
-I want to **click the ‘who we are’ --> ‘management team’ menu item**  
-So that **we can see that the correct page is displayed**  
-
+In order to **promote our management team**
+As a **user**
+I want to **view a list of the management team**
 
 #### Acceptance criteria
 
 - Management team page is displayed correctly
 - Verify that all team members have Name, Job Title, Picture and description.
 
+#### Notes
 
+- The management team page location is **menu --> 'Who we are' --> 'Management team'
+- The HTML tags are missing IDs so using the tag text is acceptable
 
 ### Story 2
 
+In order to **promote out portfolio**
 As a **user**  
-I want to **go to the ‘Our Portfolio’ --> ‘Pricing, data and market intelligence’ menu item**  
-So that **I can open the IJ Global website and see the latest news section**  
+I want to **view a list and navigate to other brands**  
 
 
 #### Acceptance criteria
@@ -44,6 +46,10 @@ So that **I can open the IJ Global website and see the latest news section**
 - The page title is ‘IJGlobal | Infrastructure Journal and Project Finance Magazine’
 - The league table section is displayed on the home page
 
+#### Notes
+
+- The portfolio page location is **menu --> 'Our Portfolio' --> 'Pricing, data and market intelligence'
+- The HTML tags are missing IDs so using the tag text is acceptable
 
 ---
 

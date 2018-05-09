@@ -63,6 +63,64 @@ namespace EMQARecruitmentTest
         {
             testRunner.CollectScenarioErrors();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigating to the Portfolio Page")]
+        public virtual void NavigatingToThePortfolioPage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigating to the Portfolio Page", ((string[])(null)));
+#line 7
+ this.ScenarioSetup(scenarioInfo);
+#line 8
+  testRunner.Given("I am on the Euromoney Homepage from and I click on the Navigation Menu Bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 9
+   testRunner.When("I click on the link \"Our Portfolio\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
+   testRunner.And("I click on the link \"Pricing, data and market intelligence\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+   testRunner.Then("I am navigated to the specified Portfolio Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verifying if IJ Global link is visible")]
+        public virtual void VerifyingIfIJGlobalLinkIsVisible()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifying if IJ Global link is visible", ((string[])(null)));
+#line 13
+this.ScenarioSetup(scenarioInfo);
+#line 14
+     testRunner.Given("I am on Pricing, data and market intelligence Homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 15
+  testRunner.And("I click on \'https://ijglobal.com/\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 16
+  testRunner.Then("the site logs me into the brand and I am in the Home page \"IJGlobal | Infrastruct" +
+                    "ure Journal and Project Finance Magazine\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verifying if the League Table Section is display on the brand page")]
+        [NUnit.Framework.TestCaseAttribute("Rank", null)]
+        [NUnit.Framework.TestCaseAttribute("Company", null)]
+        [NUnit.Framework.TestCaseAttribute("Total(USDm)", null)]
+        [NUnit.Framework.TestCaseAttribute("Transactions", null)]
+        [NUnit.Framework.TestCaseAttribute("MarketShare", null)]
+        public virtual void VerifyingIfTheLeagueTableSectionIsDisplayOnTheBrandPage(string leagueTableSectionDetails, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifying if the League Table Section is display on the brand page", exampleTags);
+#line 18
+this.ScenarioSetup(scenarioInfo);
+#line 19
+   testRunner.Given("I am on the brand Homepage \"IJGlobal | Infrastructure Journal and Project Finance" +
+                    " Magazine\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 20
+   testRunner.Then(string.Format("I verify {0} on the page", leagueTableSectionDetails), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

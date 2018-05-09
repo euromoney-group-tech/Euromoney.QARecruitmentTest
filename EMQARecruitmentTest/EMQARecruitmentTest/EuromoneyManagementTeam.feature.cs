@@ -63,6 +63,42 @@ namespace EMQARecruitmentTest
         {
             testRunner.CollectScenarioErrors();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Navigating to the Management Team Page")]
+        public virtual void NavigatingToTheManagementTeamPage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigating to the Management Team Page", ((string[])(null)));
+#line 7
+this.ScenarioSetup(scenarioInfo);
+#line 8
+   testRunner.Given("I am on the Euromoney Homepage from and I click on the Navigation Menu Bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 9
+   testRunner.When("I access the Navigation Menu bar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
+   testRunner.And("I click on the link \"Who we are\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+   testRunner.And("I click on the link \"Management Team\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 12
+   testRunner.Then("I am navigated to the Management Team Homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verifying the details of the Management Team")]
+        public virtual void VerifyingTheDetailsOfTheManagementTeam()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verifying the details of the Management Team", ((string[])(null)));
+#line 14
+this.ScenarioSetup(scenarioInfo);
+#line 15
+   testRunner.Given("I am on the Management Team Homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+   testRunner.Then("I view a list of the Management Team and their details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
